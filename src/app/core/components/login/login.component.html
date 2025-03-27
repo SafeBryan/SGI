@@ -1,0 +1,32 @@
+<form [formGroup]="group">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title class="textAlign">Inicio de Sesion</mat-card-title>
+      <mat-card-subtitle class="textAlign"
+        >Inicia sesion para que disfrutes de nuestros
+        servicios</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-content class="container">
+      <sgi-custom-input
+        label="Correo "
+        type="text"
+        placeholder="Ingrese su correo"
+        [required]="true"
+        [control]="group.controls.email"
+        icon="email"
+      >
+      </sgi-custom-input>
+      <sgi-custom-input
+        label="Contraseña "
+        type="password"
+        placeholder="Ingrese su contraseña"
+        [required]="true"
+        [control]="group.controls.password"
+        icon="password"
+      >
+      </sgi-custom-input>
+      <button mat-button [disabled]=group.invalid (click)="login()">Iniciar Sesion</button>
+    </mat-card-content>
+  </mat-card>
+</form>
