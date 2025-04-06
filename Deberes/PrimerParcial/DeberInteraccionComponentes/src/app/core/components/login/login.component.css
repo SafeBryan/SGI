@@ -1,0 +1,25 @@
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-card {
+    width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+    margin-bottom: 15px;
+}

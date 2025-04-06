@@ -1,0 +1,20 @@
+<mat-toolbar class="header-toolbar">
+  <div class="user-container">
+    <button mat-button [matMenuTriggerFor]="userMenu" class="user-button">
+      <img
+        src="../../../../assets/images/avatar.png"
+        alt="Avatar"
+        class="user-avatar"
+      />
+      <span class="user-name">Usuario</span>
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+  </div>
+
+  <mat-menu #userMenu="matMenu">
+    <button mat-menu-item (click)="signOut()">
+      <mat-icon>logout</mat-icon>
+      <span>Cerrar Sesión</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

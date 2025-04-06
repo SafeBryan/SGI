@@ -1,0 +1,14 @@
+.header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #121212;
+    padding: 40px 50px;
+  }
+  
+  .title {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
