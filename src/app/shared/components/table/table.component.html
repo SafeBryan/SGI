@@ -1,0 +1,14 @@
+<div class="container">
+  <ng-content></ng-content>
+  <mat-table [dataSource]="data">
+    <ng-container
+      [matColumnDef]="metadata.field"
+      *ngFor="let metadata of metaDataColumns"
+    >
+      <th mat-header-cell *matHeaderCellDef>{{ metadata.title }}</th>
+      <th mat-cell *matCellDef="let row">{{ row[metadata.field] }}</th>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: columns" class="highline"></tr>
+  </mat-table>
+</div>
