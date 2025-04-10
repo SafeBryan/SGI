@@ -1,0 +1,27 @@
+<h2 mat-dialog-title class="text-lg font-semibold">Nueva Oferta</h2>
+
+<mat-dialog-content class="py-4 px-1">
+  <div style="display: flex; flex-direction: column; gap: 1rem">
+    <mat-form-field appearance="outline">
+      <mat-label>Nombre de la Oferta</mat-label>
+      <input matInput placeholder="Ej. Oferta 1" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Descripción de la Oferta</mat-label>
+      <input matInput placeholder="Ej. Descripción" />
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="px-3 pb-3">
+  <button mat-button color="warn" (click)="close()">Cancelar</button>
+  <button
+    mat-raised-button
+    color="primary"
+    [disabled]="!transactionName.trim()"
+    (click)="save()"
+  >
+    Guardar
+  </button>
+</mat-dialog-actions>

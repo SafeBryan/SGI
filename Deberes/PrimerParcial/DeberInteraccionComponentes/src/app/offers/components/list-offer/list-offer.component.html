@@ -1,1 +1,9 @@
-<p>list-offer works!</p>
+<bpaz-title></bpaz-title>
+<bpaz-container>
+  <bpaz-table
+    [data]="data"
+    [metaDataColumns]="metaDataColumns"
+    (add)="openForm()"
+  >
+  </bpaz-table>
+</bpaz-container>

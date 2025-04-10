@@ -1,0 +1,93 @@
+/* Estilos para el contenedor principal */
+.container {
+    background-color: white;
+    color: black; /* Asegura que el texto dentro del contenedor sea negro */
+    padding: 16px;
+}
+
+/* Estilo para la tabla */
+mat-table {
+    width: 100%;
+    background-color: white;
+}
+
+/* Encabezados de la tabla */
+th.mat-header-cell {
+    color: black !important; /* Asegura que el color del encabezado sea negro */
+    font-weight: bold;
+    background-color: #f5f5f5; 
+}
+
+/* Celdas de la tabla */
+td.mat-cell {
+    color: black !important; /* Asegura que el color del texto de las celdas sea negro */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Fila de la tabla */
+tr.mat-row {
+    background-color: white;
+}
+
+/* Hover en la fila */
+tr.highline:hover {
+    background-color: #f0f0f0; 
+}
+
+/* Estilo del botón */
+button.mat-raised-button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Texto blanco */
+    padding: 8px 16px; /* Espaciado dentro del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 14px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+}
+
+/* Efecto hover en el botón */
+button.mat-raised-button:hover {
+    background-color: #45a049; /* Color más oscuro cuando el mouse está encima */
+    transform: translateY(-2px); /* Levantar un poco el botón al pasar el mouse */
+}
+
+/* Efecto focus en el botón */
+button.mat-raised-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 132, 255, 0.5); /* Resaltado azul cuando el botón está enfocado */
+}
+
+/* Deshabilitar el botón */
+button.mat-raised-button:disabled {
+    background-color: #bdbdbd; /* Color gris cuando está deshabilitado */
+    color: #757575; /* Color de texto gris */
+}
+
+/* Estilo del botón Raised personalizado */
+.custom-button {
+    background-color: #090909; /* Fondo oscuro */
+    color: white !important; /* Asegura que el texto sea blanco */
+    font-weight: bold;
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.2s; /* Animación suave */
+}
+
+
+.custom-button:hover {
+    background-color: #040404; 
+    transform: translateY(-2px); 
+}
+
+/* Efecto focus */
+.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+
+
+.custom-button:disabled {
+    background-color: #bdbdbd; 
+    color: #757575; 
+}

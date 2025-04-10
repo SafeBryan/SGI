@@ -1,0 +1,22 @@
+<h2 mat-dialog-title class="text-lg font-semibold">
+  Nueva Transacción
+</h2>
+
+<mat-dialog-content class="py-4 px-1">
+  <mat-form-field appearance="outline" class="w-full">
+    <mat-label>Nombre de la Transacción</mat-label>
+    <input matInput [(ngModel)]="transactionName" placeholder="Ej. Compra de materiales" />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end" class="px-3 pb-3">
+  <button mat-button color="warn" (click)="close()">Cancelar</button>
+  <button
+    mat-raised-button
+    color="primary"
+    [disabled]="!transactionName.trim()"
+    (click)="save()"
+  >
+    Guardar
+  </button>
+</mat-dialog-actions>

@@ -1,0 +1,22 @@
+
+mat-toolbar.container {
+    background-color: white !important;
+    color: black !important; 
+    border-bottom: 1px solid #e0e0e0; 
+    padding: 0 16px; 
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+  }
+  
+
+  mat-toolbar.container mat-icon {
+    color: black;
+  }
+  
+
+  mat-toolbar.container h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.25rem; 
+  }
